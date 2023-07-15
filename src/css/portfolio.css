@@ -1,0 +1,111 @@
+body{
+    overflow-y:scroll;
+}
+.pMain{
+    font-family: 'iYekanLighter';
+    font-size: 15px;
+}
+.pHeader{
+    margin:40px 100px;
+}
+.pHeader h3{
+font-family: 'iYekanExtra';
+}
+.pHeader h4{
+    font-size:13px;
+}
+.pItem span{
+    font-size: 30px;
+}
+.pHr{
+    opacity: 25%;
+}
+
+
+.pLanding{
+    margin-bottom: 100px;
+}
+.pItems{
+    margin: 0 100px 100px 100px ;
+    justify-items: end;
+    row-gap:10px;
+    display: grid;
+    grid-template:
+    " pImg pItem1  " auto
+    " pImg pItem2 " auto
+    " . pItem3 " auto
+    " . pItem4 " auto
+    ". pItem5"auto
+    ". pItem6"auto
+    / 50% 50% ;
+    row-gap: 10px;
+    margin:0 100px;
+
+}
+.pImg{
+    width: 550px;  
+    grid-area: pImg; 
+    position:fixed;
+    left: 0;
+    
+   }
+
+.pItem{
+    
+    background-color: #EBEBEB;
+    color:black;
+    width: 450px;
+    border-radius: 25px;
+    height: 100px;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    direction: rtl;
+    border: 1px solid rgb(196, 196, 196);
+}
+.pItem a{
+    font-family: 'iYekanBold';
+}
+.pItem1{
+    background-color: #8338EC;
+    grid-area: pItem1;
+    color:white;
+}
+.pItem1 a{
+    color:white
+}
+
+.pItem2 {
+    grid-area: pItem2;
+    
+
+}
+
+.pItem3{
+    grid-area: pItem3;
+    
+}
+
+.pItem4{
+    grid-area: pItem4;
+    
+}
+.pItem5{
+    grid-area: pItem5;
+    
+}
+
+.pItem6{
+    grid-area: pItem6;
+    
+}
+
+
+.pItem:hover{
+    border:1px solid black
+}
+
+
+p{
+    font-family: 5px;
+}

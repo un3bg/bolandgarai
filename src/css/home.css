@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "iYekanExtra";
+    src: url(../fonts/IRANYekanExtraBlackFaNum.ttf);
+  }
+  @font-face {
+    font-family: "iYekanBold";
+    src: url(../fonts/IRANYekanBold.ttf);
+  }
+  @font-face {
+    font-family: "iYekanReg";
+    src: url(../fonts/IRANYekanRegular.ttf);
+  }
+  @font-face {
+    font-family: "iYekanLight";
+    src: url(../fonts/IRANYekanLight.ttf);
+  }
+  @font-face {
+    font-family: "iYekanLighter";
+    src: url(../fonts/IRANYekanThin.ttf);
+  }
+
+
+
+  body{
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(246, 246, 246);
+    
+    
+  }
+  .App {
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+  }
+  
+
+
+  a{
+    text-decoration: none;
+    color:black
+  }
+  
+  .active{
+    font-family: 'iYekanExtra';
+  }
+  
+  .navbar{
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    display: inline-grid;
+    grid-template:"20% auto auto auto auto auto 20%" / 1fr ;
+    width: 100%;
+    grid-template-areas:".  n4 n2 n3 n5 n1 .";
+    padding: 20px;
+    font-family: "iYekanLight";
+  }
+  #n1{
+    grid-area: n1;
+    /* font-family: 'iYekanExtra'; */
+  }
+  #n2{
+    grid-area: n2;
+  }
+  .n3{
+    grid-area: n3;
+    color:#F86F03;
+    font-size: 30px;
+  }
+  #n4{
+    grid-area: n4;
+  }
+  #n5{
+    grid-area: n5;
+  }
+  
+
+  .landing{
+    margin:0 100px 50px 100px ;
+    display: grid;
+    background-color:rgb(24, 24, 24);
+    color: white;
+    border-radius: 30px;
+    height:85vh;
+    grid-template: 
+    "lName lName"20%
+    "lHeader lHeader"5%
+    "lExplain lExplain"20%
+    /* "lContact lContact"10% */
+    "lImage2 lImage1"55%
+    /1fr 1fr ;
+    align-items: center;
+    column-gap: 60px;
+  }
+  
+  
+  .lName{
+    grid-area: lName;
+    font-family: 'iYekanExtra';
+    margin: 0;
+  }
+  .lHeader{
+    grid-area: lHeader;
+    font-family: 'iYekanBold';
+    margin: 0px;
+  }
+  .lExplain{
+    grid-area: lExplain;
+    font-family: 'iYekanLighter';
+    color:rgb(196, 196, 196);
+    
+  }
+  .lContact{
+    grid-area: lContact;
+    color:white;
+    text-decoration: none;
+    align-self:start;
+    justify-self: center;
+    background-color: #F86F03;
+    width: 200px;
+    font-family: 'iYekanLighter';
+    display: flex;
+    border-radius: 20px;
+    font-size: 15px;
+    justify-content: center;
+    gap:10px;
+    padding:6px
+  
+  }
+  .lImage1{
+    grid-area: lImage1;
+    position: relative;
+    color:wheat;
+    justify-self: start;
+
+  }
+  .vid1{
+    position: relative;
+    border-radius: 20px;
+    filter: grayscale(40%);
+    width: 500px;
+    
+   
+  }
+  .vid1H{
+    font-family: 'iYekanExtra';
+    position: absolute;
+    bottom:30px;
+    right:100px;
+    transition-property: right;
+    transition-duration: 1s;
+    font-size: 18px;
+  }
+  
+  .vid2{
+    position: relative;
+    border-radius: 20px;
+  }
+  .vid2H{
+    font-family: "iYekanExtra";
+    position: absolute;
+    bottom:30px;
+    right:100px;
+    font-size: 18px;
+    transition-property: right;
+    transition-duration: 1s;
+    
+  }
+  .lImage2{
+    grid-area: lImage2;
+    font-family: 'iYekanLighter';
+    color:wheat;
+    position: relative;
+    justify-self: end;
+  }
+  
+  
+  .lImage1:hover .vid1H{
+    right: 80px;
+  }
+  
+  .lImage2:hover .vid2H{
+    right: 80px;
+  }
+  
+  #n1:hover , #n2:hover , #n4:hover , #n5:hover{
+    font-family: 'iYekanExtra';
+  }
+
+  .buttonComp:hover{
+    border: 1px solid black;
+  }
+
+  #active {
+    font-family: 'iYekanExtra';
+  }
+

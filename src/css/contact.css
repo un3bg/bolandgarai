@@ -1,0 +1,109 @@
+img{
+    width: 370px;
+    border-radius: 30px;
+    margin-left: 100px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    font-family: 'iYekanLight';
+
+}
+.main{
+    background-color: #ebebeb;
+    width: 100%;
+    margin-right: 100px;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+.cHeader{
+    margin:40px 100px;
+}
+.cHeader h3{
+font-family: 'iYekanExtra';
+}
+.cHeader h4{
+    font-size:13px;
+}
+
+.buttonComp{
+    width: 230px;
+    background-color: rgb(187, 187, 187);
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+    padding-right:20px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 2px 4px 0 rgba(141, 139, 139, 0.37);
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 14px;
+}
+
+
+.cHr{
+    opacity: 30%;
+    margin:0 100px;
+}
+
+.directCall{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    gap:40px;
+    margin:40px 100px;
+}
+
+.soHea{
+    grid-area: soHea;
+}
+.soIns{
+    grid-area: soIns;
+}
+
+
+.soMai{
+    grid-area: soMai;
+}
+
+
+
+.soTel{
+    grid-area: soTel;
+    justify-self: start;
+}
+
+.soTwi{
+    grid-area: soTwi;
+    justify-self: start;
+
+}
+
+.socials{
+
+    margin:40px 100px;
+    display: grid;
+    grid-template: 
+    ". soHea" auto
+    "soTwi soIns" auto
+    "soTel soMai" auto
+    ". . "auto
+    /auto auto
+    ;
+    justify-items: end;
+    row-gap: 10px;
+}
+
+
+
+.socials h3 , .directCall h3 {
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+}
+
