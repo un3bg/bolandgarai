@@ -19,8 +19,12 @@ font-family: 'iYekanExtra';
 }
 .pHr{
     opacity: 25%;
+    margin:0
 }
-
+.pNav{
+    position: sticky;
+    top:0
+}
 
 .pLanding{
     margin-bottom: 100px;
@@ -50,8 +54,8 @@ font-family: 'iYekanExtra';
     
    }
 
-.pItem{
-    
+#pItem{
+
     background-color: #EBEBEB;
     color:black;
     width: 450px;
@@ -63,18 +67,19 @@ font-family: 'iYekanExtra';
     direction: rtl;
     border: 1px solid rgb(196, 196, 196);
 }
-.pItem a{
+#pItem a{
     font-family: 'iYekanBold';
 }
-.pItem1{
+.turn{
     background-color: #8338EC;
-    grid-area: pItem1;
     color:white;
 }
 .pItem1 a{
-    color:white
+    /* color:white */
 }
-
+.pItem1{
+    grid-area: pItem1;
+}
 .pItem2 {
     grid-area: pItem2;
     
@@ -101,7 +106,7 @@ font-family: 'iYekanExtra';
 }
 
 
-.pItem:hover{
+#pItem:hover{
     border:1px solid black
 }
 

@@ -3,12 +3,13 @@ import c1 from '../media/c3.jpg'
 import '../css/contact.css'
 import { BsTwitter } from 'react-icons/bs'
 import { IoCall , IoChevronBackOutline } from 'react-icons/io5'
-import {BiLogoTelegram , BiLogoInstagramAlt , BiLogoGmail} from 'react-icons/bi'
+import {BiLogoTelegram , BiLogoInstagramAlt , BiLogoGmail ,BiSolidMessageSquareCheck} from 'react-icons/bi'
+import {FaRegCalendarCheck , FaHeartCircleCheck} from 'react-icons/fa'
 
 let Contact = () => {
 return(
     <div>
-        <Navbar />
+        <Navbar class="navbar" />
         <Main />
     </div>
 )
@@ -20,8 +21,8 @@ let Main = () => {
             <img src={c1}></img>
             <div className='main'>
                 <div className='cHeader'>
-                    <h3 >در 24 ساعت شبانه روز باشما در ارتباط هستم</h3>
-                    <h4>ارامش خاطر شما و کیفیت کارها مهمترین ارمان ماست</h4>
+                    <h3 >در 24 ساعت شبانه روز باشما در ارتباط هستم <FaRegCalendarCheck /></h3>
+                    <h4>ارامـــــش خاطر شمــــــــا و کیـــــفـــــیت کــــارهـــــا مــهمـــــترین ارمـــــان مـــاست</h4>
                 </div>
                     <hr className='cHr'></hr>
                 <div className='directCall'>
@@ -41,7 +42,7 @@ let Main = () => {
     )
 }
 
-let Button =(x)=> {
+export let Button =(x)=> {
     return (
        <a className={'buttonComp ' + x.className} href={x.link}>{x.name}{x.icon} </a>
     )

@@ -11,7 +11,6 @@ import {Link , NavLink} from 'react-router-dom'
 import {useState} from 'react'
 import React, { Component } from 'react'
 
-
 // let check = 'false'
 
 
@@ -22,16 +21,16 @@ import React, { Component } from 'react'
 let Home = () => {
     return(
         <div>
-           <Navbar />
+           <Navbar class="navbar" />
            <Landing />
         </div>
     )
     }
 
 
-    export let Navbar=()=> { 
+    export let Navbar=(x)=> { 
   return(
-      <nav className="navbar">
+      <nav className={x.class}>
           <NavLink to="/contact" id='n5' className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} >ارتباط  <GrContactInfo/>  </NavLink>
           <NavLink to="/about" id='n4' className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} >درباره  <BiUserPin/>  </NavLink>
           <span class="material-symbols-outlined n3">
@@ -53,9 +52,9 @@ let Home = () => {
   let Landing= ()=>{
     return(
       <div className='landing'>
-        <h1 className='lName'>یونس بلندگرای</h1>
-        <h2 className='lHeader'>برنامه نویس و طراح سایت</h2>
-        <p className='lExplain'>انجام کلیه پروژه های طراحی وبسایت ، برنامه نویسی پروژه های صنعتی ، سیستم های فروشگاهی <br></br>با بهترین کیفیت و بیش از 5 سال سابقه طراحی و توسعه</p>
+        <h1 className='lName'> بـــــلـــــنــــــدگـــــرای</h1>
+        <h2 className='lHeader'>تیم توسعه و خلق ایده ها</h2>
+        <p className='lExplain'>انجام کلیه پروژه های طراحی وبسایت ، برنامه نویسی پروژه های صنعتی ، سیستم های فروشگاهی <br></br>با بــــــــهتـــــریــــــــن کـــــیــــفـــــیت و بـــیـــــــش از 5 ســـــال سابـــــقـــــــه طــــراحــــــــی و توســــــعــــــه</p>
         <Link to='/products' className='lImage1'>
         <video className="vid1" width="370px" loop autoplay preload muted autoPlay={true} >
           <source src={lap1}></source>

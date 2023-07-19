@@ -47,12 +47,22 @@
   .navbar{
     text-align: center;
     background-color: rgb(246, 246, 246);
-    display: inline-grid;
+    display: grid;
     grid-template:"20% auto auto auto auto auto 20%" / 1fr ;
     width: 100%;
     grid-template-areas:".  n4 n2 n3 n5 n1 .";
     padding: 20px;
     font-family: "iYekanLight";
+    /* position: sticky;
+    top:0; */
+    background: #F6F6F6;
+
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+
   }
   #n1{
     grid-area: n1;
@@ -75,12 +85,13 @@
   
 
   .landing{
-    margin:0 100px 50px 100px ;
+    margin:10px 100px 50px 100px ;
+    padding-bottom: 20px;
     display: grid;
     background-color:rgb(24, 24, 24);
     color: white;
     border-radius: 30px;
-    height:85vh;
+    height:80vh;
     grid-template: 
     "lName lName"20%
     "lHeader lHeader"5%
@@ -137,7 +148,7 @@
     position: relative;
     border-radius: 20px;
     filter: grayscale(40%);
-    width: 500px;
+    width: 450px;
     
    
   }
